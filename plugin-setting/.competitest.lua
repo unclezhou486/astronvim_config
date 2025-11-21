@@ -16,7 +16,7 @@ return {
 		cpp = {exec = "./$(FNOEXT).out"}
 	},
 	template_file = {
-		cpp = "/home/unclezhou/Coderepo/template.cpp",
+		cpp = "~/.config/nvim/plugin-setting/template.cpp",
 	},
 	evaluate_template_modifiers = true,
 	date_format = "%Y-%m-%d %H:%M:%S",
