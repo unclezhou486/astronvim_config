@@ -1,0 +1,5 @@
+BasedOnStyle: Google    # 使用 Google 风格作为基础
+IndentWidth: 4          # 设置缩进为 4 格
+TabWidth: 4             # 设置 tab 宽度为 4
+UseTab: Never           # 禁用 tab 键，使用空格替代
+

@@ -24,5 +24,15 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+vim.api.nvim_set_keymap('n', '<C-A-b>', ':CompetiTest run<CR>', { noremap = true, silent = true }) -- 设置快捷键 Ctrl + Alt + B 来输入 :Competitest run
+-- 设置快捷键 Ctrl + 回车（<C-CR>） add test
+vim.api.nvim_set_keymap('n', '<C-CR>', ':CompetiTest add_testcase<CR>', { noremap = true, silent = true })
+-- 设置全局的缩进为 4 格
+vim.o.tabstop = 4        -- 设置制表符为 4 格
+vim.o.shiftwidth = 4     -- 设置缩进量为 4 格
+vim.o.expandtab = true   -- 使用空格替代制表符
+vim.o.softtabstop = 4    -- 设置软制表符为 4 格
+
+
 require "lazy_setup"
 require "polish"
