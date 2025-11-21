@@ -28,6 +28,9 @@ vim.api.nvim_set_keymap('n', '<C-A-b>', ':CompetiTest run<CR>', { noremap = true
 -- 设置快捷键 Ctrl + 回车（<C-CR>） add test
 vim.api.nvim_set_keymap('n', '<C-CR>', ':CompetiTest add_testcase<CR>', { noremap = true, silent = true })
 -- 设置全局的缩进为 4 格
+
+vim.api.nvim_set_keymap('n','<C-b>',':w<CR>:!g++ -g -std=c++20 -Wall % -o test.out<CR>',{noremap = true,silent =true})
+
 vim.o.tabstop = 4        -- 设置制表符为 4 格
 vim.o.shiftwidth = 4     -- 设置缩进量为 4 格
 vim.o.expandtab = true   -- 使用空格替代制表符
